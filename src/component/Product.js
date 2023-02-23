@@ -36,7 +36,7 @@ const Product=()=>{
         return;
       }
   
-    },[filterData,searchData])
+    },[currentBookData,filterData,searchData])
 
     useEffect(()=>{
       setData([...data,...allData.slice((count-2)*10,(count*10))])
