@@ -25,7 +25,6 @@ const Header=()=>{
       }
   }
       const {cartData}=useSelector((state)=>state.BookData)
-      console.log(cartData)
      return (
         <div className="header">
           <Link to='/'>

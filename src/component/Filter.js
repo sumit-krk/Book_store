@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 import { filterProduct } from "../Redux/action";
 import { useDispatch } from "react-redux";
 const Filter=()=>{
-    // console.log("bing",bringDataFromChild)
     const dispatch=useDispatch();
     const [selectedCategory,setSelectedCategory]=useState([]);
     const SelectFilter=(e)=>{
@@ -23,7 +22,6 @@ const Filter=()=>{
     useEffect(()=>{
         dispatch(filterProduct(selectedCategory))
      },[selectedCategory])
-    console.log("print",selectedCategory);
     return (
         <div style={{borderRight:'1px solid black',width:'15%'}}>
             <h2 style={{display:'flex',justifyContent:'center',borderBottom:'1px solid black'}}>Filters</h2>
