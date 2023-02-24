@@ -20,7 +20,6 @@ const Product=()=>{
       setData([])
       setCount(2)
       if(searchData.length>0){
-        console.log("treeee")
         setAllData(searchData);
         return;
       }
