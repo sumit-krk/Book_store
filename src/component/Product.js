@@ -12,9 +12,6 @@ const Product=()=>{
     const [data,setData]=useState([]);
     const [allData,setAllData]=useState([]);
     const [count,setCount]=useState(2);
-    console.log("data",data)
-    console.log("searchData",searchData)
-    console.log("allData",allData)
     useEffect(()=>{
           dispatch(gatAllBookData())
     },[])
