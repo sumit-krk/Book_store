@@ -7,7 +7,6 @@ export const gatAllBookData=()=>{
 }
 
 export const addToCart=(data)=>{
-    console.log(data)
     return {
         type:ADD_TO_CART,
         data
@@ -15,7 +14,6 @@ export const addToCart=(data)=>{
 }
 
 export const removeFromCart=(data)=>{
-    console.log(data)
     return{
         type:REMOVE_FROM_CART,
         data,
