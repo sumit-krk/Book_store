@@ -35,7 +35,6 @@ const SetPrice=(data)=>{
 
 //function for remove data from cart
 const removeData=(alldata,data)=>{
-    console.log("alldata",alldata,"data",data)
     let array=alldata.filter((e)=> e.id!=data.id)
     return array;
 }
@@ -50,13 +49,11 @@ const manageQuentity=(alldata,data,type)=>{
         }
         array.push(alldata[i]);
     }
-    console.log("array",array)
     return array;
 }
 
 // function for filter data
 const filterData = (data, selectedValues) => {
-    console.log("selectedValues",selectedValues)
     let filterValues=[];
     if (selectedValues.includes("300")) {
         let result=data.filter((e)=>{
