@@ -31,7 +31,6 @@ const ProductDetails=()=>{
                 }
             }
             if(dummy==true){
-                alert("Product Already In Cart")
             }
             else{
                 alert("Product Added In Cart");
@@ -40,7 +39,6 @@ const ProductDetails=()=>{
         }
    }
    const handleWatchList=()=>{
-    console.log("yes")
    }
     return(
         <>
