@@ -103,8 +103,6 @@ const filterData = (data, selectedValues) => {
         }) 
         filterValues=[...filterValues,...result];
       }
-
-      console.log("filterValues",filterValues)
       return filterValues;
 
   };
